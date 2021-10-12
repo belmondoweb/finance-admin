@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+    <app-header (onSearch)="searchVideos($event)"></app-header>
+</header>
+<ng-content select="selector"></ng-content>
+<main>
+    <app-video-list [searchText]="searchText" [userId]="userId"></app-video-list>
+</main>

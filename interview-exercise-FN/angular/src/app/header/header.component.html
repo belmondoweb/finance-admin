@@ -1,0 +1,17 @@
+<div class="header container">
+    <form [formGroup]="form" (ngSubmit)="searchVideos()">
+        <div class="form-group-inline">
+            <label for="user">Topic Name:</label>
+            <input formControlName="searchText" class="form-control">
+        </div>
+        <div class="form-group-inline">
+            <label for="user">User:</label>
+            <select class="option" formControlName="userId" class="form-control"> 
+                <option *ngFor="let _user of users" [value]="_user.playlistID">{{_user.name}}</option>
+              </select>
+        </div>
+        <div class="form-group-inline">
+            <button title="submit" [disabled]="!form.valid">Search</button>
+        </div>
+    </form>
+</div>

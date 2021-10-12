@@ -1,0 +1,8 @@
+<div class="container" *ngIf="filteredVideos && filteredVideos.length > 0">
+    <div *ngFor="let vid of filteredVideos">
+        <div class="card" *ngFor="let vi of vid.videos | filter : searchText">
+            <p>{{vi.title}}</p>
+            <span>{{vi.time}}</span>
+        </div>
+    </div>
+</div>

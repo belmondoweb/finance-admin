@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+@import 'styles/colors';
+body {
+    background-color: $colorBackground;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    .form-group-inline {
+        display: inline-block;
+        .form-control {
+            margin: 0px 15px;
+            background-color: transparent;
+            border: 1px solid $colorAccent;
+            padding: 8px;
+            border-radius: 5px;
+            color: #ffffff;
+            outline: none !important;
+            min-width: 180px;
+            option {
+                background-color: $colorPrimary;
+            }
+        }
+        button {
+            background-color: $colorAccent;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 8px;
+            outline: none !important;
+            border: 1px solid $colorAccent;
+            min-width: 100px;
+            cursor: pointer;
+            font-weight: 500;
+            margin: 0px 15px;
+        }
+    }
+    .container {
+        background-color: $colorPrimary;
+        padding: 10px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        .card {
+            display: flex;
+            max-width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $colorListItemBackground;
+            padding: 15px;
+            margin: 5px 10px;
+            border-radius: 5px;
+            p {
+                margin: 0px;
+                font-weight: 500;
+            }
+            span {
+                font-size: 12px;
+                color: #c2c2c2;
+            }
+        }
+    }
+}
